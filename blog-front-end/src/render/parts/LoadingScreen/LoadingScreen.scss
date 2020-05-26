@@ -1,0 +1,27 @@
+.LoadingScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .logo-wrap {
+    position: relative;
+  }
+
+  svg {
+    position: relative;
+    z-index: 1;
+    height: 33vh;
+    width: 33vh;
+    max-height: 150px;
+    max-width: 150px;
+  }
+}
+
+.spinning {
+  transform-origin: center;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  100% { transform: rotate(-360deg); }
+}

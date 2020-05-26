@@ -1,0 +1,94 @@
+.PostPage {
+  header {
+    margin-bottom: 3rem;
+    @media only screen and (max-width: 996px) {
+      margin-bottom: 2rem;
+    }
+  }
+  header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    // line-height: 1.25;
+    line-height: 1.2;
+    @media only screen and (max-width: 996px) {
+      font-size: 2rem;
+    }    
+    margin-bottom: 0;
+  }
+  header .post-meta {
+    margin-top: 8px; // same as line-height - font-size of h1 above it to maintain vertical rhythm
+    align-items: flex-center;
+    flex-direction: column;
+    .tags {
+      margin-top: 8px;
+    }
+    .tags .chip {
+      margin: 0;
+      margin-left: 8px;
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+    }
+    .date {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 16px;
+        font-size: 14px;
+      }
+    }
+  }
+  .post-footer-pager {
+    margin-top: 2rem;
+    display: flex;
+
+    @media only screen and (max-width: 996px) {
+      margin-bottom: 2rem;
+    }
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  .pager-nav-item {
+    display: flex;
+    flex-basis: 50%;
+    max-width: 50%;
+    flex-grow: 1;
+    @media only screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+  .pager-nav-item:nth-child(2) {
+    margin-left: 1rem;
+    text-align: right;
+    @media only screen and (max-width: 768px) {
+      margin-left: 0;
+      margin-top: 0.5rem;
+      text-align: left;
+    }
+  }
+  .pager-nav-link {
+    border-radius: .4rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    display: block;
+    flex-grow: 1;
+    padding: 1rem;
+    text-decoration: none;
+    background: #fbfbfb;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .pager-nav-link .sublabel {
+    margin-bottom: .25rem;
+    font-weight: bold;
+  }
+  .pager-nav-link .label {
+    margin-bottom: 0;
+    margin-top: 0;
+    word-break: break-word;
+    color: #4e4e4e;
+    font-weight: 400;
+  }
+}

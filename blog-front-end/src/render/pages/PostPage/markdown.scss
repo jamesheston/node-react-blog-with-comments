@@ -1,0 +1,90 @@
+.markdown {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;  
+
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #000;
+    margin-bottom: 12px;
+    // margin-top: 60px;
+    margin-top: 3rem;
+  }
+
+  h3 {
+    font-size:20px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #000;
+    margin-bottom: 12px;
+    // margin-top:48px;
+    margin-top:3rem;
+  }
+
+  h4 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom:12px;
+    // margin-top: 36px;
+    margin-top: 3rem;
+  }
+
+  img {
+    max-width: 100%;
+    // border: 1px solid rgba(0, 0, 0, 0.1);    
+    border: 1px solid #EEE;    
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity ease 0.1s;
+    &:hover {
+      opacity: 0.95;
+    }
+  }
+
+  blockquote {
+    color: #6a737d;
+    font-size: 15px;
+    margin: 0 0 1rem;
+    padding: 0;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    color: #1f2227;
+  }
+
+  ol, ul {
+    margin-block-start: 0;
+    padding-inline-start: 1rem;
+  }
+
+  pre {
+    padding: 1rem;
+    margin-bottom: 1.5rem !important;
+    line-height: 15.7144px;
+  }
+
+  pre code {
+    padding: 0;
+    font-size: 85%;
+    // line-height: 1.45;
+    // font-size:10.8375px;
+    // line-height:15.7144px;
+    .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+      background: transparent;
+    }
+  }
+
+  a {
+    // font-weight: 500;    
+  }
+
+  strong, b {
+    font-weight: 500;
+    color: #000;    
+  }
+}

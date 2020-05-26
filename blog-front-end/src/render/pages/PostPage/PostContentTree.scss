@@ -1,0 +1,46 @@
+.PostContentTree {
+  margin-top: 42px;
+  padding-right: 24px;
+
+  h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: #000;
+  }
+  ul {
+    font-size: 13px;
+  }
+  li {
+     
+  }
+  li { .he2, .he3, .he4 {
+    cursor: pointer;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.54);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: inline-block;
+    border-left: 4px solid transparent;
+  
+    &.active {
+      color: rgba(0, 0, 0, 0.87);
+      border-left: 4px solid #e0e0e0;
+    }
+    &:hover {
+      border-left: 4px solid #eeeeee;
+      color: rgba(0, 0, 0, 0.54);
+    }
+  }}
+  
+  .he2 {
+    padding-left: 8px;
+  }
+  .he3 {
+    padding-left: 16px;
+  }
+  .he4 {
+    padding-left: 24px;
+  }
+}

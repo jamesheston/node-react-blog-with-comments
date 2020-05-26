@@ -1,0 +1,71 @@
+/*
+Popup Modal
+*/
+.image-viewer-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 500ms;
+  z-index: -1;
+  max-width: 100vw;
+
+  &.show {
+    display: flex;
+    opacity: 1;
+    z-index: 2000;
+  }
+
+  .close-button-anchor {
+    margin: 20px;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2002; 
+    cursor: pointer; 
+  }
+  
+  .close-button {
+    fill: rgba(105,107,111,0.6);
+    height: 30px;
+    transition: 350ms all;
+    width: 30px;  
+  
+    &:hover {
+      opacity: 1;
+      transform: scale(1.2);    
+    }
+  }
+  
+  .x-shape {
+    box-shadow: rgba(0,0,0,0.16) 0 1px 6px 0;
+    fill: rgba(255,255,255,0.851);
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.93);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .image-wrap {
+    position: relative;
+    z-index: 2001;
+  }
+
+  .image-wrap img {
+    max-height: calc(100vh - 48px);
+    max-width: calc(100vw - 48px);
+    border-radius: 5px;   
+  }
+}

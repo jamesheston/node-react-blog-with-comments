@@ -1,0 +1,117 @@
+.Comments {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+
+  .section-title {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: #2d2d2d;    
+  }
+  .form-control, .btn {
+    font-size: 16px;
+  }
+  .notice {
+    color: rgb(31, 34, 39);
+  }
+  .form-control::placeholder {
+    color: #a9a9a9;
+  }
+}
+
+.CommentForm {
+  input[type=text].form-control {
+    height: 40px;
+    border:1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    font-size: 16px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    padding-left: 14px;
+    padding-right: 14px;
+  
+    &:focus {
+      border: 1px solid #1e88e5;
+      outline: 1px solid #1e88e5;
+      box-shadow: none;
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+  textarea.form-control {
+    border:1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    font-size: 16px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    padding-left: 14px;
+    padding-right: 14px;
+  
+    &:focus {
+      border: 1px solid #1e88e5;
+      outline: 1px solid #1e88e5;
+      box-shadow: none;
+      &::placeholder {
+        color: transparent;
+      }
+    }    
+  }
+  .btn {
+    margin-bottom: 1rem;
+    background-color: #5f7796;
+    border-color: #5f7796;
+    &:hover { background-color: #6085b5; }
+  }
+  .btn-primary.disabled, .btn-primary:disabled {
+    border: 1px solid #5f6871;
+    background-color: #5f7796;    
+  }
+}
+
+.CommentList {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.125);
+
+  li {
+    display: flex;
+    justify-content: flex-start;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    
+    .avatar {
+      margin-top: 4px;
+      padding-right: 14px;
+      width: 60px;
+    }
+    .avatar img {
+      width: 45px;
+      border-radius: 4px;
+    }
+    .content {
+      width: calc(100% - 60px);
+    }
+    .name {
+      font-size: 14px;
+      color: rgba(0,0,0,.87);
+      font-weight: 700;
+    }
+    .time {
+      margin-left: .5em;
+      color: rgba(0,0,0,.4);
+      font-size: 12.25px;
+    }
+    .text {
+      margin: .25em 0 .5em;
+      font-size: 14px;
+      word-wrap: break-word;
+      color: rgba(0,0,0,.87);
+      line-height: 1.3;
+    }
+  }
+}
