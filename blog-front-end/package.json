@@ -15,7 +15,7 @@
     "html-to-react": "^1.4.2",
     "lodash": "^4.17.15",
     "mdi-react": "^7.2.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "prismjs": "^1.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
